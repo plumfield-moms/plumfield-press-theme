@@ -1,7 +1,9 @@
 .rich-text {
   z-index: 1;
 }
-
+.rich-text.cursive p{
+font-size: 50px !important;
+}
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
