@@ -29,6 +29,7 @@
     {%- endif -%}
 
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {% comment %}theme-check-disable RemoteAsset{% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Satisfy:regular" rel="stylesheet">
@@ -52,37 +53,37 @@
       {%- if author and illustrator -%}
         <script type="application/ld+json">
           {
-          "@context": "https://schema.org/",
-          "@graph": [
+            "@context": "https://schema.org/",
+            "@graph": [
               {
-                  "@id": {{reference}},
-                  "@type": "Book",
-                  "author": {
-                      "@id": {{ author }}
-                  },
-                  "illustrator":{
-                    "@id": {{illustrator }}
-                  }
-                  "inLanguage": "en",
-                  "name": {{ page_title }},
-              },
+                "@id": "{{reference}}",
+                "@type": "Book",
+                "author": {
+                  "@id": "{{ author }}"
+                },
+                "illustrator": {
+                  "@id": "{{illustrator }}"
+                },
+                "inLanguage": "en",
+                "name": "{{ page_title }}"
+              }
             ]
           }
         </script>
       {%- elsif author -%}
         <script type="application/ld+json">
           {
-          "@context": "https://schema.org/",
-          "@graph": [
+            "@context": "https://schema.org/",
+            "@graph": [
               {
-                  "@id": {{reference}},
-                  "@type": "Book",
-                  "author": {
-                      "@id": {{ author }}
-                  },
-                  "inLanguage": "en",
-                  "name": {{ page_title }},
-              },
+                "@id": "{{reference}}",
+                "@type": "Book",
+                "author": {
+                  "@id": "{{ author }}"
+                },
+                "inLanguage": "en",
+                "name": "{{ page_title }}"
+              }
             ]
           }
         </script>
