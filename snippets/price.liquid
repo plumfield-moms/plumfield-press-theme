@@ -36,7 +36,9 @@
   endif
 
   if target == product and product.price_varies
-    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+    assign money_price = product.price_min | money
+    assign money_price_max = product.price_max | money
+    assign money_price = money_price | append: ' - ' | append: money_price_max
   endif
 -%}
 
@@ -109,7 +111,10 @@
         </span>
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-        {% render 'unit-price', price: product.selected_or_first_available_variant.unit_price, measurement: product.selected_or_first_available_variant.unit_price_measurement %}
+        {% render 'unit-price',
+          price: product.selected_or_first_available_variant.unit_price,
+          measurement: product.selected_or_first_available_variant.unit_price_measurement
+        %}
       {%- endif -%}
     </div>
     {%- if show_badges -%}
