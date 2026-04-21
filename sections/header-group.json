@@ -14,13 +14,6 @@
     "announcement_bar_x7CwKY": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_Fqt3ew": {
-          "type": "announcement",
-          "settings": {
-            "text": "15% Store-Wide Discount with code Launch15",
-            "link": "https://plumfieldpress.com/discount/Launch15"
-          }
-        },
         "announcement_d4BpMP": {
           "type": "announcement",
           "settings": {
@@ -30,7 +23,6 @@
         }
       },
       "block_order": [
-        "announcement_Fqt3ew",
         "announcement_d4BpMP"
       ],
       "name": "t:sections.announcement-bar.presets.name",

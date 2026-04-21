@@ -157,6 +157,16 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "11879641663917679130": {
+        "type": "shopify://apps/fav-schema-json-ld/blocks/fav-rich-snippets/0f4af051-833d-495d-a7e0-249ff5f90778",
+        "disabled": false,
+        "settings": {}
+      },
+      "17370010407503379518": {
+        "type": "shopify://apps/wishlist-by-square/blocks/app-embed/88ec2beb-ce43-48ed-b791-0a6554082c2b",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {

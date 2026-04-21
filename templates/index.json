@@ -26,7 +26,10 @@
           }
         }
       },
-      "block_order": ["heading_8piaqQ", "text_KhiTV6"],
+      "block_order": [
+        "heading_8piaqQ",
+        "text_KhiTV6"
+      ],
       "name": "Header Banner",
       "settings": {
         "desktop_content_position": "center",
@@ -39,7 +42,18 @@
     },
     "collection_list": {
       "type": "collection-list",
-      "settings": {}
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -68,7 +82,49 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "177626105957c4ff1f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_dbcdac7_JHfwDD": {
+          "type": "ai_gen_block_dbcdac7",
+          "settings": {
+            "enable_popup": false,
+            "show_frequency": "monthly",
+            "headline": "Special Offer!",
+            "message": "Get 15% off your order when you use the code below at checkout.",
+            "discount_code": "Launch15",
+            "button_label": "Start shopping",
+            "display_delay": 3,
+            "popup_background_color": "#ffffff",
+            "text_color": "#121212",
+            "popup_border_radius": 8,
+            "headline_size": 28,
+            "message_size": 16,
+            "code_background_color": "#f9ddab",
+            "code_border_color": "#77183c",
+            "code_text_color": "#77183c",
+            "code_size": 24,
+            "code_border_radius": 4,
+            "button_background_color": "#77183c",
+            "button_hover_color": "#5a1230",
+            "button_text_color": "#f9ddab",
+            "button_text_size": 16,
+            "button_border_radius": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_dbcdac7_JHfwDD"
+      ],
+      "settings": {}
     }
   },
-  "order": ["rich_text_8XnFxm", "collection_list", "featured_collection"]
+  "order": [
+    "rich_text_8XnFxm",
+    "collection_list",
+    "featured_collection",
+    "177626105957c4ff1f"
+  ]
 }
